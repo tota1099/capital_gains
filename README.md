@@ -19,7 +19,7 @@ Rode o comando abaixo no seu terminal, e insira os inputs para calcular a taxa:
 ruby cli.rb
 ```
 
-<img width="540" src="docs/cli.gif"/>
+<img width="840" src="docs/cli.gif"/>
 
 **Dica:** Para finalizar o processo, basta apertar Enter sem nenhuma informação.
 
