@@ -2,6 +2,15 @@
 
 Recebe uma lista de transações e retorna o valor das taxas de cada transação.
 
+## Decisões técnicas
+
+Busquei separar as responsabilidades por domínio, e deixar o código o mais simples possível.
+
+### Coisas que eu melhoraria
+
+- As classes Wallet e Transactions::CalculateTax ficaram com excesso de responsabilidade
+- Poderia adicionar testes unitários para todas as classes
+
 ## Dependências
 
 Possuir o ruby instalado na versão 3.2.3 ou superior
@@ -31,7 +40,3 @@ Rode o comando abaixo no seu terminal:
 ```
 ruby tests/test_capital_gains_json.rb
 ```
-
-## Coisas que gostaria de melhorar
-
-- As classes Wallet e Transactions::CalculateTax ficaram com excesso de responsabilidade

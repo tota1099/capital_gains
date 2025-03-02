@@ -15,9 +15,9 @@ module Transactions
         return 0.0 unless need_pay_tax?(transaction)
 
         gain = calculate_gain(wallet, transaction)
-        return gain * TAX_RATE unless wallet.has_loss?
+        return calculate_tax_with_loss(wallet, gain) if wallet.has_loss?
         
-        calculate_tax_with_loss(wallet, gain)
+        gain * TAX_RATE
       end
 
       private
